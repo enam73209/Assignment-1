@@ -1,0 +1,28 @@
+<script>
+    calculateGrade = (marks)=>{
+        switch (true){
+            case marks>=90:
+                document.write('A');
+                break;
+            case marks>=80:
+                document.write('B');
+                break;
+            case marks>=70:
+                document.write('C');
+                break;
+            case marks>=60:
+                document.write('D');
+                break;
+           default:
+                document.write('F');
+                break;
+        }
+    }
+    const marks = parseFloat(prompt("Input your marks: "));
+    if(typeof marks ==='number' && !isNaN(marks)){
+        calculateGrade(marks);
+    }
+    else{
+        document.write("Invalid Input");
+    }
+</script>
